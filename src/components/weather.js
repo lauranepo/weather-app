@@ -10,6 +10,7 @@ const WeatherCard = ({ weatherData }) => (
                 <Card.Header className="header">
                     {weatherData.name}
                 </Card.Header>
+                <p>{moment().format('dddd')}, {moment().format('LL')}</p>
                 <p>Temperature: {weatherData.main.temp} &deg;F </p>
                 <p>Feels Like: {weatherData.main.feels_like} &deg;F</p>
                 <p>Min: {weatherData.main.temp_min} &deg;F / Max: {weatherData.main.temp_max} &deg;F</p>
@@ -17,8 +18,6 @@ const WeatherCard = ({ weatherData }) => (
                 <p>Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-US')}</p>
                 <p>Description: {weatherData.weather[0].description}</p>
                 <p>Humidity: {weatherData.main.humidity} %</p>
-                <p>Day: {moment().format('dddd')}</p>
-                <p>Date: {moment().format('LL')}</p>
             </Card.Content>
         </Card>
     </div>
