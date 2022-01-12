@@ -10,7 +10,7 @@ const WeatherCard = ({ weatherData }) => (
                 <Card.Header className="header">
                     {weatherData.name}
                 </Card.Header>
-                <p className="date">{moment().format('dddd')}, {moment().format('LL')}</p>
+                <p className="date">{moment().format('dddd')}</p>
                 <p>Temperature: {weatherData.main.temp} &deg;F </p>
                 <p>Feels Like: {weatherData.main.feels_like} &deg;F</p>
                 <p>Min: {weatherData.main.temp_min} &deg;F / Max: {weatherData.main.temp_max} &deg;F</p>
@@ -20,6 +20,7 @@ const WeatherCard = ({ weatherData }) => (
                 <p>Humidity: {weatherData.main.humidity}%</p>
             </Card.Content>
         </Card>
+        
     </div>
 
 )
