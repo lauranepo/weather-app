@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It takes your current coordinates and displays weather information from Open Weather's APIs.
 
 ## Available Scripts
 
